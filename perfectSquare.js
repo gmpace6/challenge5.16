@@ -25,6 +25,7 @@ function nextPerfectSquare(number) {
 }
 console.log(nextPerfectSquare(number))
 
+
 function nextPerfectSquare1(number) {
     if (Math.sqrt(number) % 1 === 0) {    
         return (Math.sqrt(number) * 2 + 1 + number)
@@ -33,3 +34,17 @@ function nextPerfectSquare1(number) {
     }
 }
 console.log(nextPerfectSquare1(number))
+
+
+function perfectSquare(num) {
+    let sqrt = Math.sqrt(num)
+    if (Number.isInteger(sqrt)){
+        return (sqrt + 1)  2
+    }
+    return -1
+}
+console.log(perfectSquare(16))
+
+
+const perfectSquare2 = num => Number.isInteger(Math.sqrt(num)) ? (Math.sqrt(num) + 1)  2: -1
+console.log(perfectSquare2(2))
